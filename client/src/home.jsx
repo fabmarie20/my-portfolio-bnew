@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 export default function Home() {
   return ( // Home Page Component
     // Main layout and styling for the home section
@@ -37,7 +38,7 @@ export default function Home() {
           gap: "20px",
         }}
       >
-        <a
+        <Link
           href="/about"
           style={{
             padding: "14px 28px",
@@ -51,9 +52,9 @@ export default function Home() {
           }}
         >
           Learn More About Me
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="/projects"
           style={{
             padding: "14px 28px",
@@ -67,7 +68,7 @@ export default function Home() {
           }}
         >
           View My Projects
-        </a>
+        </Link>
       </div>
     </section>
   );
